@@ -1,9 +1,11 @@
+import NavBar from "./components/Navbar";
 import Home from "./screens/Home";
 
 function App() {
   return (
     <main>
-      <Home/>
+      <NavBar />
+      <Home />
     </main>
   );
 }

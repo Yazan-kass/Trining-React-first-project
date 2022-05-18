@@ -4,7 +4,7 @@ button {
     padding: 15px 20px;
     box-sizing: border-box;
     font-size: 22px;
-    background: linear-gradient(189.77deg, #7135d8 14.69%, #542acc 85.31%);
+    background: linear-gradient(189.77deg, #86838b 14.69%, #201f24 85.31%);
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -13,8 +13,15 @@ button {
     border: none;
     font-weight: bold;
     cursor: pointer;
+    
+  
 }
-
+button:hover {
+    min-width: 25%;
+    height: 45px;
+    transition: all ease-in-out 0.5s;
+    font-size: 40px;
+  }
 .white { 
     background: white;
     color: #000;

@@ -8,19 +8,19 @@ class Home extends Component {
     value: "",
     items: [
       {
-        title: "Yazn",
+        title: "watching a movie",
         id: Math.random() * 1000,
       },
       {
-        title: "Yazn",
+        title: "Playing football",
         id: Math.random() * 1000,
       },
       {
-        title: "Moath",
+        title: "Reading a book",
         id: Math.random() * 1000,
       },
       {
-        title: "Husam",
+        title: "Go to gym",
         id: Math.random() * 1000,
       },
     ],
@@ -41,30 +41,27 @@ class Home extends Component {
         },
         ...this.state.items,
       ],
-      value: ''
+      value: "",
     });
   };
-
 
   handleDelete = (id) => {
     console.log(id);
     this.setState({
       items: this.state.items.filter((item) => item.id !== id),
     });
-  }; 
+  };
 
   render() {
     return (
       <div className={"inner-container"}>
-        <h1>To Do List App</h1>
+        <h1>List Task </h1>
         <InputBox
           value={this.state.value}
           handleChange={this.handleChange}
           handleAdd={this.handleAdd}
-          
         />
-        <List items={this.state.items} 
-          handleDelete={this.handleDelete}/>
+        <List items={this.state.items} handleDelete={this.handleDelete} />
       </div>
     );
   }
